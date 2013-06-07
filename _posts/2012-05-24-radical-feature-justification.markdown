@@ -29,7 +29,7 @@ Whenever a user would try to use the *fake* feature, it should be registered
 that a user tried to do so and a helpful message should be displayed. The
 message could go something like this:
 
-![center](/media/radical_feature_justification.png)
+![center](/images/radical_feature_justification.png)
 
 Being constantly reminded that a feature is unavailable is annoying, therefore
 the actionable object should only be visible until the user has interacted with
