@@ -1,3 +1,4 @@
 $(document).ready(function(){
-  $('#sidebar').css({'min-height': $('#content').height()});
+  var height = Math.max($(window).height(), $('#content').height());
+  $('#sidebar').css({'min-height': height});
 });
