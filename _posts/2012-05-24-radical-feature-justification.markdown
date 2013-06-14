@@ -12,6 +12,8 @@ to avoid wasting time developing the wrong things. Spending time developing a
 feature is always in vain if not one uses it, no matter how sound the idea and
 implementation might be.
 
+<!-- more -->
+
 There are many solutions to determining whether a feature should be added to a
 product or not. Methods like user surveys and questionnaires are proven to work,
 but adds another level of abstraction to the scenario. Whether a user thinks
@@ -29,7 +31,8 @@ Whenever a user would try to use the *fake* feature, it should be registered
 that a user tried to do so and a helpful message should be displayed. The
 message could go something like this:
 
-![center](/images/radical_feature_justification.png)
+{:.centered}
+![radical feature justification](/images/radical_feature_justification.png)
 
 Being constantly reminded that a feature is unavailable is annoying, therefore
 the actionable object should only be visible until the user has interacted with

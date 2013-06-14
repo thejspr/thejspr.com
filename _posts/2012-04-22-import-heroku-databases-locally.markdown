@@ -12,6 +12,8 @@ url: /2012/import-heroku-databases-locally
 I just discovered a way simpler solution. Add the `taps` gem to your Gemfile,
 and run `heroku db:pull`. Voila!
 
+<!-- more -->
+
 ## Long (non-rails) version
 
 I have recently started a pet-project which emails me a random piece of text

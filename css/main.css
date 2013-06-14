@@ -1,4 +1,33 @@
+a:hover {
+  text-decoration: none;
+}
+
+#sidebar {
+  border-right: 1px dotted silver;
+}
+
 #content {
-  padding-left: 20px;
-  border-left: 1px dotted silver;
+}
+
+.post {
+  margin: 20px 0;
+  padding: 10px 0;
+  border-bottom: 1px dotted silver;
+}
+
+#archive h1 {
+  margin-bottom: 20px;
+}
+
+#archive h2 {
+  margin: 0 0 20px 0;
+}
+
+.help {
+  font-size: 120%;
+  padding-top: 10px;
+}
+
+.centered {
+  text-align: center;
 }
