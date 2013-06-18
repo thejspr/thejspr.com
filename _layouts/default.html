@@ -12,12 +12,24 @@
   <body>
     <div class="container-fluid">
       <div class="row-fluid clearfix">
-        <div id="sidebar" class="span2">
-          <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-          <a href="mailto:thejspr@gmail.com">contact</a>
-          <a href="http://twitter.com/thejspr">twitter</a>
-          <a href="/archive">archive</a>
-          <a href="/feed.xml">rss</a>
+        <div id="sidebar" class="span2 visible-desktop">
+          <div class="sticky">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <a href="mailto:thejspr@gmail.com">contact</a>
+            <a href="http://twitter.com/thejspr">twitter</a>
+            <a href="/archive">archive</a>
+            <a href="/feed.xml">rss</a>
+          </div>
+        </div>
+
+        <div id="header" class="row-fluid hidden-desktop">
+          <div class="span6">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <a href="mailto:thejspr@gmail.com">contact</a>
+            <a href="http://twitter.com/thejspr">twitter</a>
+            <a href="/archive">archive</a>
+            <a href="/feed.xml">rss</a>
+          </div>
         </div>
 
         <div id="content" class="span6">
@@ -27,12 +39,6 @@
       </div>
     </div> <!-- container-fluid -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        var height = Math.max($(window).height(), $('#content').height());
-        $('#sidebar').css({'min-height': height});
-      });
-    </script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> -->
   </body>
 </html>

@@ -3,10 +3,12 @@ a:hover {
 }
 
 #sidebar {
-  border-right: 1px dotted silver;
 }
 
 #content {
+  border-left: 1px dotted silver;
+  margin-left: 0;
+  padding-left: 3.564102564102564%;
 }
 
 h1.title a {
@@ -34,6 +36,27 @@ h1.title a {
 
 .centered {
   text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  width: 200px;
+  top: 0;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  #content {
+    border-left: none;
+  }
+}
+
+#header {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px dotted silver;
 }
 
 /* Syntax highlighting */
