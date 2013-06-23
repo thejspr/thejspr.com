@@ -11,6 +11,12 @@ a:hover {
   padding-left: 3.56%;
 }
 
+#resume {
+  height: 750px;
+  width: 100%;
+  border: 1px dotted silver;
+}
+
 h1.title a {
   color: #000;
 }
