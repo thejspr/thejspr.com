@@ -8,11 +8,15 @@ a:hover {
 #content {
   border-left: 1px dotted silver;
   margin-left: 0;
-  padding-left: 3.564102564102564%;
+  padding-left: 3.56%;
 }
 
 h1.title a {
   color: #000;
+}
+
+.post-wrapper {
+  min-height: 800px;
 }
 
 .post {
@@ -36,6 +40,15 @@ h1.title a {
 
 .centered {
   text-align: center;
+}
+
+#projects img {
+  border: 1px solid silver;
+  margin-bottom: 15px;
+}
+
+#projects {
+  padding-bottom: 20px;
 }
 
 .sticky {
