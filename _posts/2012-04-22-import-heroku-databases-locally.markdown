@@ -7,8 +7,6 @@ categories: heroku devops postgresql
 url: /2012/import-heroku-databases-locally
 ---
 
-## Short version
-
 I just discovered a way simpler solution. Add the `taps` gem to your Gemfile,
 and run `heroku db:pull`. Voila!
 

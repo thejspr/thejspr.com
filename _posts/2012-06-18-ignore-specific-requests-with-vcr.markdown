@@ -14,6 +14,8 @@ recording interactions and later replay them when you run your tests. This is us
 when dealing with third-party APIs and if your application is interaction with other
 applications you don't want to have running to make your tests pass.
 
+<!-- more -->
+
 VCR has an option which disables it from mocking any requests to localhost. As I
 turn this option off, another problem arose; it wouldn't allow selenium-webdriver to
 connect to `http://127.0.0.1/_IDENTITY_` (why it needs this I do not know). In

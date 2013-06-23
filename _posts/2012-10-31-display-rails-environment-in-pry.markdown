@@ -11,6 +11,8 @@ I believe that environment awareness is important. Especially when it comes to
 your Rails environment. Hence, I added the following lines to my Pry config to
 have the prompt include the current environment.
 
+<!-- more -->
+
 {% highlight ruby %}
 if defined?(Rails)
   Pry.config.prompt = [proc { env }, "     | "]

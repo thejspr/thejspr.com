@@ -12,6 +12,8 @@ Nutter recently inspired me to move one of my personal projects on to JRuby. The
 app is fairly small, running Rails 3.2 using postgresql, activemodel-serializers
 and oauth to name a few.
 
+<!-- more -->
+
 ## Using JRuby on Heroku
 
 In order for Heroku to use JRuby instead of MRI, I've added the following to my
