@@ -11,16 +11,16 @@ I recently needed to test the integration between two Rails apps running locally
 my machine and wanted to record the HTTP interactions with
 [VCR](https://github.com/myronmarston/vcr). VCR enables you to mock HTTP requests by
 recording interactions and later replay them when you run your tests. This is useful
-when dealing with third-party APIs and if your application is interaction with other
-applications you don't want to have running to make your tests pass.
+when dealing with third-party API's and if your application is interacting with other
+applications you don't want to depend on when running your tests.
 
 <!-- more -->
 
 VCR has an option which disables it from mocking any requests to localhost. As I
-turn this option off, another problem arose; it wouldn't allow selenium-webdriver to
+turned this option off, another problem arose; it wouldn't allow selenium-webdriver to
 connect to `http://127.0.0.1/_IDENTITY_` (why it needs this I do not know). In
 searching for an answer I came upon this neat, and seemingly undocumented, feature of
-VCR.
+VCR: Ignoring requests to specific hostnames.
 
 {% highlight ruby %}
 c.ignore_request do |request|

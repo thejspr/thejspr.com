@@ -8,8 +8,9 @@ url: /2012/display-rails-environment-in-pry
 ---
 
 I believe that environment awareness is important. Especially when it comes to
-your Rails environment. Hence, I added the following lines to my Pry config to
-have the prompt include the current environment.
+your Rails environment and mocking around in a production setting. Hence, I
+added the following lines to my Pry config (.pryrc) to have the prompt include the
+current environment.
 
 <!-- more -->
 

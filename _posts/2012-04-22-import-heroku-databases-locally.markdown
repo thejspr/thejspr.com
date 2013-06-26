@@ -14,9 +14,9 @@ and run `heroku db:pull`. Voila!
 
 ## Long (non-rails) version
 
-I have recently started a pet-project which emails me a random piece of text
+I recently started a pet-project which emails me a random piece of text
 each day, to remind me of something. I am making this as I often read something
-which gives an insight that I want to be reminded of in the future for it to be
+which gives an insight that I want to be reminded of in the future, for it to be
 properly 'persisted' in my brain. Stay posted for the MVP.
 
 ### Backing up Postgres on Heroku
@@ -46,5 +46,6 @@ pg_restore --clean --no-acl --no-owner -h localhost -U <username> -d <database> 
 Remember to replace the username and database parameters.
 
 In case you don't want to be asked for a password every time, you can create a
-`~/.pgpass` file containing you postgres details using the following format:
-`hostname:port:database:username:password`. Give that file `chmod 0600 ~/.pgpass` permissions and add the parameter `-w` to the script above.
+`~/.pgpass` file containing you Postgres details using the following format:
+`hostname:port:database:username:password`. Give that file `chmod 0600 ~/.pgpass`
+permissions and add the parameter `-w` to the script above.
