@@ -1,5 +1,6 @@
 name: The Progress
 url: http://thejspr.com
-description: TODO
+description: on becoming better
 pygments: true
 permalink: none
+exclude: ['jekyll.thor']
