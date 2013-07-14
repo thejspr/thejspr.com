@@ -9,19 +9,21 @@
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
     <!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> -->
     <!-- <link href="/css/bootstrap&#45;responsive.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <script>
-      if (document.location.hostname !== 'localhost') {
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-26348309-4']);
+      _gaq.push(['_trackPageview']);
 
-        ga('create', 'UA-26348309-4', 'thejspr.com');
-        ga('send', 'pageview');
-      }
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+    <!-- <script src="js/zepto.min.js"></script> -->
   </head>
   <body>
     <div class="container-fluid">
@@ -31,10 +33,10 @@
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <a href="/projects">projects</a><br />
             <a href="/archive">archive</a><br />
-            <a href="mailto:thejspr@gmail.com">contact</a><br />
-            <a href="http://twitter.com/thejspr">twitter</a><br />
-            <a href="/resume-jesper-kjeldgaard.pdf">resume</a><br />
-            <a href="/feed.xml">rss</a>
+            <a data-track='Mail' href="mailto:thejspr@gmail.com">contact</a><br />
+            <a data-track='Twitter' href="http://twitter.com/thejspr">twitter</a><br />
+            <a data-track='Resume' href="/resume-jesper-kjeldgaard.pdf">resume</a><br />
+            <a data-track='Rss' href="/feed.xml">rss</a>
           </div>
         </div>
 
@@ -56,5 +58,13 @@
 
       </div>
     </div> <!-- container-fluid -->
+
+    <script>
+      $(document).ready(function(){
+        $('a[data-track]').click(function(event){
+          _gaq.push(['_trackevent', 'Links', 'Click', $(this).data('track')]);
+        });
+      });
+    </script>
   </body>
 </html>
