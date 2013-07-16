@@ -26,6 +26,7 @@
     <!-- <script src="js/zepto.min.js"></script> -->
   </head>
   <body>
+
     <div class="container-fluid">
       <div class="row-fluid clearfix">
         <div id="sidebar" class="span2 visible-desktop">
@@ -33,10 +34,10 @@
             <h1 class="title"><a href="/">{{ site.name }}</a></h1>
             <a href="/projects">projects</a><br />
             <a href="/archive">archive</a><br />
-            <a target='_blank' data-track='Mail' href="mailto:thejspr@gmail.com">contact</a><br />
-            <a target='_blank' data-track='Twitter' href="http://twitter.com/thejspr">twitter</a><br />
-            <a target='_blank' data-track='Resume' href="/resume-jesper-kjeldgaard.pdf">resume</a><br />
-            <a target='_blank' data-track='RSS' href="/feed.xml">rss</a>
+            <a onClick='_gaq.push(["_trackEvent", "Interest", "Mail"])' href="mailto:thejspr@gmail.com">contact</a><br />
+            <a onClick='_gaq.push(["_trackEvent", "Interest", "Twitter"])' href="http://twitter.com/thejspr">twitter</a><br />
+            <a onClick='_gaq.push(["_trackEvent", "Interest", "Resume"])' href="/resume-jesper-kjeldgaard.pdf">resume</a><br />
+            <a onClick='_gaq.push(["_trackEvent", "Interest", "RSS"])' href="/feed.xml">rss</a>
           </div>
         </div>
 
@@ -59,12 +60,5 @@
       </div>
     </div> <!-- container-fluid -->
 
-    <script>
-      $(document).ready(function(){
-        $('a[data-track]').click(function(event){
-          _gaq.push(['_trackevent', 'Links', 'Click', $(this).data('track')]);
-        });
-      });
-    </script>
   </body>
 </html>
