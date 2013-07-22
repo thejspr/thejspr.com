@@ -34,7 +34,7 @@ class Jekyll < Thor
       num = STDIN.gets
       file = @files[num.to_i - 1]
     end
-    now = Date.today.strftime("%Y-%m-%d").gsub(/-0/,'-')
+    now = Time.now.strftime("%Y-%m-%d")
     mv file, "_posts/#{now}-#{File.basename(file)}"
   end
 end
