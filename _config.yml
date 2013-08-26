@@ -1,6 +1,6 @@
-name: The Progress
-url: http://thejspr.com
-description: on becoming better
+name: 'The Progress'
+url: 'http://thejspr.com'
+description: 'on becoming better'
 pygments: true
-permalink: none
+permalink: 'blog/:title'
 exclude: ['jekyll.thor']
