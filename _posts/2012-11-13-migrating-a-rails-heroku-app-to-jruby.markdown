@@ -14,6 +14,10 @@ and oAuth to name a few.
 
 <!-- more -->
 
+## Update 2013-09-10
+
+Heroku now has a much better and updated guide for running your [Rails app with JRuby on Heroku](https://devcenter.heroku.com/articles/moving-an-existing-rails-app-to-run-on-jruby)
+
 ## Using JRuby on Heroku
 
 In order for Heroku to use JRuby instead of MRI, I've added the following to my
