@@ -47,6 +47,10 @@ a:hover {
   height: auto;
 }
 
+.excerpt {
+  text-align: justify;
+}
+
 .sticky {
   border-bottom: 1px dotted silver;
   padding-bottom: 15px;
