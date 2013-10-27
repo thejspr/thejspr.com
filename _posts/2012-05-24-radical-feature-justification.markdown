@@ -31,7 +31,6 @@ Whenever a user would try to use the fake feature, the event should be
 registered and a helpful message should be displayed. The message could go
 something like this:
 
-{:.centered}
 ![radical feature justification](/img/radical_feature_justification.png)
 
 Being constantly reminded that a feature is unavailable is annoying, therefore

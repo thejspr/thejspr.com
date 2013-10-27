@@ -3,7 +3,7 @@ layout: default
 title: Projects - The Progress
 ---
 
-<div id='projects'>
+<div class='projects'>
   <h1>Projects</h1>
 
   <p>
@@ -18,11 +18,9 @@ title: Projects - The Progress
     <a href='http://measurehub.co' target='_blank'>Measurehub</a>
   </h2>
 
-  <div class='centered'>
-    <a href='#' id='measurehub' title='Click to see more screenshots'>
-      <img src='/img/measurehub-thumb.png' alt='Measurehub' width='500px'/>
-    </a>
-  </div>
+  <a href='#' id='measurehub' title='Click to see more screenshots'>
+    <img src='/img/measurehub-thumb.png' alt='Measurehub' width='500px'/>
+  </a>
 
   <p>
     Measurehub is a web application for tracking any sort of metric. Think of it
@@ -42,11 +40,9 @@ title: Projects - The Progress
     <a href="https://github.com/thejspr/chromarks" target='_blank'>Chromarks</a>
   </h2>
 
-  <div class='centered'>
-    <a href='#' id='chromarks' title='Click to see more screenshots'>
-      <img src='/img/chromarks-thumb.png' alt='Chromarks' width='500px'/>
-    </a>
-  </div>
+  <a href='#' id='chromarks' title='Click to see more screenshots'>
+    <img src='/img/chromarks-thumb.png' alt='Chromarks' width='500px'/>
+  </a>
 
   <p>
     Chromarks is a RubyGem for searching chrome bookmarks from the terminal.
@@ -65,11 +61,9 @@ title: Projects - The Progress
       target='_blank'>HackerNews Sorter Chrome Extension</a>
   </h2>
 
-  <div class='centered'>
-    <a href='#' id='hn' title='Click to see more screenshots'>
-      <img src='/img/hn-thumb.png' alt='HackerNews Sorter' width='500px'/>
-    </a>
-  </div>
+  <a href='#' id='hn' title='Click to see more screenshots'>
+    <img src='/img/hn-thumb.png' alt='HackerNews Sorter' width='500px'/>
+  </a>
 
   <p>
     I like reading technology news on
@@ -90,11 +84,9 @@ title: Projects - The Progress
     <a href="http://sot.herokuapp.com" target='_blank'>Stay on Track</a>
   </h2>
 
-  <div class='centered'>
-    <a href='#' id='sot' title='Click to see more screenshots'>
-      <img src='/img/sot-thumb.png' alt='Stay on Track' width='500px'/>
-    </a>
-  </div>
+  <a href='#' id='sot' title='Click to see more screenshots'>
+    <img src='/img/sot-thumb.png' alt='Stay on Track' width='500px'/>
+  </a>
 
   <p>
     In 2011 I wrote a small Rails application to keep track on when I wen't to
@@ -117,14 +109,15 @@ title: Projects - The Progress
     <a href="mailto:thejspr@gmail.com">get in touch</a>.
   </p>
 
-  <hr />
+  <br />
 </div>
 
 <link href='/css/magnific-popup.css' rel='stylesheet' />
-<script type='text/javascript' src='/js/jquery-2.0.2.min.js'></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
+<!-- <script src="/js/zepto.min.js"></script> -->
 <script type='text/javascript' src='/js/jquery.magnific-popup.min.js'></script>
 
-<script type='text/javascript'>
+<script>
   $('#measurehub').magnificPopup({
     items: [
       { src: '/img/measurehub.png' },

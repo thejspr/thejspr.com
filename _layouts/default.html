@@ -7,10 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="alternate" type="application/rss+xml" title="The Progress" href="/feed.xml" />
 
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
-    <!-- <link href="/css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- <link href="/css/bootstrap&#45;responsive.min.css" rel="stylesheet"> -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/css/bootstrap.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+
+        <aside class="col-sm-12 col-md-2">
+          <div class="sidebar sticky">
+            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+            <a class='btn btn-primary' href="/archive">Archive</a>
+            <a class='btn btn-info' href="/projects">Projects</a>
+            <a class='btn btn-primary' href="/feed.xml">Rss</a>
+            <a class='btn btn-info' href="http://twitter.com/thejspr">Twitter</a>
+            <a class='btn btn-primary' href="/resume-jesper-kjeldgaard.pdf">Resume</a>
+            <a class='btn btn-info' href="mailto:thejspr@gmail.com">Contact</a>
+          </div>
+        </aside>
+
+        <section class="col-sm-12 col-md-8 content">
+          {{ content }}
+        </section>
+
+      </div>
+    </div>
 
     <script>
       var _gaq = _gaq || [];
@@ -24,43 +47,5 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
-    <!-- <script src="js/zepto.min.js"></script> -->
-  </head>
-  <body>
-
-    <div class="container-fluid">
-      <div class="row-fluid clearfix">
-        <div id="sidebar" class="span2 visible-desktop">
-          <div class="sticky">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a href="/projects">projects</a><br />
-            <a href="/archive">archive</a><br />
-            <a href="mailto:thejspr@gmail.com">contact</a><br />
-            <a href="http://twitter.com/thejspr">twitter</a><br />
-            <a href="/resume-jesper-kjeldgaard.pdf">resume</a><br />
-            <a href="/feed.xml">rss</a>
-          </div>
-        </div>
-
-        <div id="header" class="row-fluid hidden-desktop">
-          <div class="span6">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a href="/projects">projects</a>
-            <a href="/archive">archive</a>
-            <a href="mailto:thejspr@gmail.com">contact</a>
-            <a href="http://twitter.com/thejspr">twitter</a>
-            <a href="/resume-jesper-kjeldgaard.pdf">resume</a>
-            <a href="/feed.xml">rss</a>
-          </div>
-        </div>
-
-        <div id="content" class="span6">
-          {{ content }}
-        </div>
-
-      </div>
-    </div> <!-- container-fluid -->
-
   </body>
 </html>

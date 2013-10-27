@@ -63,7 +63,6 @@ l = log --graph \
 
 This alias produces a slimmed down and decorated version of the git log:
 
-{:.centered}
 ![Enhanced Git log](/img/git-log.png)
 
 ### Commit all changed files
@@ -91,7 +90,6 @@ g() {
 This bash function prints the git status when no arguments are supplied,
 otherwise it runs the git command as usual.
 
-{:.centered}
 ![Git status alias](/img/git-status.png)
 
 I hope these tips can help in your day-to-day work and speed up your git usage.
