@@ -57,7 +57,7 @@ a:hover {
 @media (min-width: 992px) {
   .content {
     border-left: 1px dotted silver;
-    padding-left: 2%;
+    padding-left: 3.5%;
     margin-left: 2%;
   }
 
