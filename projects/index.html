@@ -15,6 +15,33 @@ title: Projects - The Progress
   <hr />
 
   <h2>
+    <a href='http://backboneindex.com' target='_blank'>Backbone Index</a>
+  </h2>
+
+  <a href='#' id='backboneindex' title='Click to see more screenshots'>
+    <img src='/img/backboneindex-thumb.png' alt='Backbone Index' width='500px'/>
+  </a>
+
+  <p>
+    I built Backbone Index because I wanted to learn
+    <a href="http://backbonejs.org">Backbone.js</a>,
+    and wanted an easy way to discover plugins and resources. It works by transforming the
+    <a href='https://github.com/jashkenas/backbone/wiki/Extensions%2C-Plugins%2C-Resources'>
+      Backbone wiki
+    </a>
+    into JSON, which is then loaded into the Backbone application.
+    <a href='http://backboneindex.com'>Try it for yourself</a> or have
+    look at <a href='http://github.com/thejspr/backboneindex'>the source code</a>.
+  </p>
+
+  <p>
+    <strong>Technologies:</strong>
+    Backbone, jQuery, Ruby, CoffeeScript and Sass.
+  </p>
+
+  <hr />
+
+  <h2>
     <a href='http://measurehub.co' target='_blank'>Measurehub</a>
   </h2>
 
@@ -30,8 +57,8 @@ title: Projects - The Progress
   </p>
 
   <p>
-    <strong>Technology:</strong>
-    Ruby on Rails, JRuby, Slim, Sass, CoffeeScript, d3.js and Heroku.
+    <strong>Technologies:</strong>
+    Ruby on Rails, JRuby, Slim, Sass, CoffeeScript, D3.js and Heroku.
   </p>
 
   <hr />
@@ -50,7 +77,7 @@ title: Projects - The Progress
   </p>
 
   <p>
-    <strong>Technology:</strong>
+    <strong>Technologies:</strong>
     Ruby and RSpec
   </p>
 
@@ -74,7 +101,7 @@ title: Projects - The Progress
   </p>
 
   <p>
-    <strong>Technology:</strong>
+    <strong>Technologies:</strong>
     Chrome Extensions API, JavaScript and CSS.
   </p>
 
@@ -89,14 +116,14 @@ title: Projects - The Progress
   </a>
 
   <p>
-    In 2011 I wrote a small Rails application to keep track on when I wen't to
+    In 2011 I wrote a small Rails application to keep track on when I went to
     the gym for an entire year. The premise is that creating a chain of events
     helps build a habit. It worked out great, but I do not maintain or use it
     anymore though.
   </p>
 
   <p>
-    <strong>Technology:</strong>
+    <strong>Technologies:</strong>
     Ruby on Rails, PostgreSQL, Haml, Sass, Devise, Heroku and RSpec.
   </p>
 
@@ -114,10 +141,19 @@ title: Projects - The Progress
 
 <link href='/css/magnific-popup.css' rel='stylesheet' />
 <script src="//cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js"></script>
-<!-- <script src="/js/zepto.min.js"></script> -->
 <script type='text/javascript' src='/js/jquery.magnific-popup.min.js'></script>
 
 <script>
+  $('#backboneindex').magnificPopup({
+    items: [
+      { src: '/img/backboneindex.png' }
+    ],
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+
   $('#measurehub').magnificPopup({
     items: [
       { src: '/img/measurehub.png' },
