@@ -68,7 +68,7 @@ a:hover {
   .sticky {
     border: none;
     position: fixed;
-    width: 200px;
+    max-width: 200px;
     top: 0;
   }
 }
