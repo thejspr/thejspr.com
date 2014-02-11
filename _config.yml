@@ -1,6 +1,5 @@
 name: 'The Progress'
 url: 'http://thejspr.com'
-description: 'on becoming better'
+description: 'Blog and portfolio of Jesper Kjeldgaard (thejspr)'
 pygments: true
 permalink: 'blog/:title'
-exclude: ['jekyll.thor']
