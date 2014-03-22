@@ -68,8 +68,12 @@ a:hover {
   .sticky {
     border: none;
     position: fixed;
-    max-width: 200px;
+    max-width: 150px;
     top: 0;
+  }
+
+  .sticky a {
+    display: block;
   }
 }
 
