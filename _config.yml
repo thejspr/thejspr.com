@@ -1,5 +1,6 @@
-name: 'The Progress'
+name: Jesper Kjelgaard
 url: 'http://thejspr.com'
 description: 'Blog and portfolio of Jesper Kjeldgaard (thejspr)'
 pygments: true
 permalink: 'blog/:title'
+markdown: kramdown
