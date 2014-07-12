@@ -13,20 +13,20 @@ application to get it running on Dokku. If you find your application relies too
 much on server specifics, this might be a good time to take a look at the 12 factor
 methodology.
 
+<!-- more -->
+
 This post covers the issues I met when deploying an existing Rails 4.1
 application using PostgreSQL to a server running Dokku.
-
-<!-- more -->
 
 ## Installing Dokku
 
 You need a server with Dokku installed, I recommend following [this
-guide](https://www.digitalocean.com/community/tutorials/how-to-use-the-dokku-one-click-digitalocean-image-to-run-a-node-js-app).
+guide](https://www.digitalocean.com/community/tutorials/how-to-use-the-dokku-one-click-digitalocean-image-to-run-a-ruby-on-rails-app).
 Alternatively, you can follow the steps on the [Dokku
 wiki](https://github.com/progrium/dokku#installing).
 
 In order to get up and running fast, I recommend using the Dokku image provided
-by DigicalOcean. It's dead easy to get going, and can easily run on a small
+by DigitalOcean. It's dead easy to get going, and can easily run on a small
 droplet for $5 per month.
 
 ## Installing PostgreSQL
@@ -35,12 +35,27 @@ You can add a PostgreSQL container to your server by installing a [Dokku
 plugin](https://github.com/Kloadut/dokku-pg-plugin). Once you have followed the
 steps on the wiki, you're almost ready to deploy your application.
 
-In order to install the `pg` gem, you need to ensure you have the PostgreSQL
-libraries installed. On Ubuntu you can install them with this command:
-`sudo apt-get install libpq-dev`.
+Running the following commands on the server worked for me:
+
+{% highlight bash %}
+# installing the plugin
+cd /var/lib/dokku/plugins
+git clone https://github.com/Kloadut/dokku-pg-plugin postgresql
+dokku plugins-install
+
+# Create and setup the db
+dokku postgresql:create <db-name>
+
+# Once you've deployed your app once, you can link the db to the app like:
+dokku postgresql:link <app-name> <db-name>
+{% endhighlight %}
 
 When you have linked you database with the application, a `DATABASE_URL` is set
 and Dokku will automatically change your Rails configuration on deploy to use that.
+
+In order to install the `pg` gem, you need to ensure you have the PostgreSQL
+libraries installed. On Ubuntu you can install them with this command:
+`sudo apt-get install libpq-dev`.
 
 ## Preparing your Rails application
 
