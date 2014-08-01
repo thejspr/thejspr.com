@@ -1,1 +1,2 @@
 User-agent: *
+Sitemap: http://thejspr.com/sitemap.xml
