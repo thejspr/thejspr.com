@@ -8,9 +8,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel='alternate' type='application/rss+xml' title='The Progress' href='/feed.xml' />
 
-    <link href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css' rel='stylesheet'>
-    <!-- <link href='/css/bootstrap.css' rel='stylesheet'> -->
-    <link rel='stylesheet' href='/css/style.css'>
+    <!-- <link href='//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' rel='stylesheet'> -->
+    <link href='/css/bootstrap.css' rel='stylesheet'>
+    <!-- <link rel='stylesheet' href='/css/style.css'> -->
   </head>
   <body>
 
@@ -36,7 +36,17 @@
 
       </div>
     </div>
-
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = '/css/style.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
     <script>
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-26348309-4']);
