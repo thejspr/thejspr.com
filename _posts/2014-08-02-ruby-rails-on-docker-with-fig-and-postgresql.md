@@ -118,6 +118,11 @@ You should now be able to access the app on http://localhost:3000 (or
 http://localdocker:3000 if you're using docker-osx).
 
 
+## Running tests from Docker via Fig
+
+You can now run your tests on the Docker container via `fig run web bundle exec
+rspec` or whichever testing framework you use.
+
 ## Conclusion
 
 I hope you found this useful and feel confident in trying out Docker for your
