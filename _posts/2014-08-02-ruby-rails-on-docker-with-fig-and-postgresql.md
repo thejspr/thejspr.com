@@ -14,7 +14,7 @@ existing Rails app onto Docker using Fig.
 
 ## Installing Docker
 
-There exists many guides on installing Docker. I recommend starting
+There are many guides on installing Docker. I recommend starting
 [here](https://docs.docker.com/installation/#installation), or if you are on
 OSX, start [here](https://github.com/noplay/docker-osx#docker-osx). The rest of
 this guide assumes you have Docker setup and running locally.
@@ -64,7 +64,7 @@ ADD . /app
 
 This file specifies how Docker builds the container. It is based on the latest
 Ubuntu (14.04) and installs everything needed for the application to run,
-including Ruby 2.1.2 and th required RubyGems.
+including Ruby 2.1.2 and the required RubyGems.
 
 
 ## Installing Fig
@@ -94,7 +94,7 @@ web:
 With this in place you can now run `fig build` and let it build the containers
 for the application and the database.
 
-## Making you app container friendly
+## Making your app container friendly
 
 Add the following to your `config/database.yml` file. This is needed as the web
 container will need to communicate with the PostgreSQL container.
