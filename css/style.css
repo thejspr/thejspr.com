@@ -1,3 +1,17 @@
+/* landing styles */
+.landing p {
+  margin-top: 20px;
+}
+
+p.lead {
+  margin-top: 10px;
+}
+
+/* base styles */
+body p {
+  font-size: 16px;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -57,7 +71,6 @@ a:hover {
 }
 
 /* Responsiveness (larger than wide-tabled) */
-
 @media (min-width: 992px) {
   .content {
     border-left: 1px dotted silver;
@@ -78,7 +91,6 @@ a:hover {
 }
 
 /* Syntax highlighting */
-
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
