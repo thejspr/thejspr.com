@@ -73,6 +73,10 @@ a:hover {
   text-align: justify;
 }
 
+.contact-form {
+  /* max-width: 500px; */
+}
+
 /* Responsiveness (larger than wide-tabled) */
 @media (min-width: 992px) {
   .sticky {
