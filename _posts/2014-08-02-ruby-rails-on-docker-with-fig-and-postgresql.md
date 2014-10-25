@@ -94,6 +94,9 @@ web:
 With this in place you can now run `fig build` and let it build the containers
 for the application and the database.
 
+If you get a `No Rakefile found` error, make sure you are using Docker >1.3.0
+(Thanks Wilker Lúcio).
+
 ## Making your app container friendly
 
 Add the following to your `config/database.yml` file. This is needed as the web
