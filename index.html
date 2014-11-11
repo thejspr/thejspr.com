@@ -3,14 +3,27 @@ layout: default
 title: Thejspr
 ---
 
-<div id="home">
-  {% for post in site.posts %}
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <div class="meta">{{ post.date | date_to_string }}</div>
+<div class="landing">
+  <h1 class="text-center">Hi, I'm Jesper</h1>
 
-    <div class="post excerpt">
-      {{ post.content | split: '<!-- more -->' | first }}
-      <a href="{{ post.url }}">&hellip;</a>
-    </div>
-  {% endfor %}
+  <p class="lead text-center">
+    Ruby/Web developer at your service.
+  </p>
+
+  <hr>
+
+  <p>
+    Need help on a Ruby, Web, Mobile or Rails project?
+  </p>
+
+  <p>
+    I work with Ruby and JavaScript to solve problems with web-based solutions.
+    You can read more about me on <a href="https://www.linkedin.com/in/jesperkjeldgaard">LinkedIn</a>
+    and see some of my work on <a href="https://www.github.com/thejspr">Github</a>.
+  </p>
+
+  <p>
+    <a href='mailto:thejspr@gmail.com' class='btn btn-default'>Send me an email</a>
+    or connect via <a href="https://www.twitter.com/thejspr">Twitter</a>.
+  </p>
 </div>
