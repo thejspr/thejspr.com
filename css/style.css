@@ -8,8 +8,8 @@ p.lead {
 }
 
 /* base styles */
-body p {
-  font-size: 16px;
+body {
+  font-size: 1.6em;
 }
 
 a:hover {
