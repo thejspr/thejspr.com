@@ -107,32 +107,10 @@ title: Projects - The Progress
 
   <hr />
 
-  <h2>
-    <a href="http://sot.herokuapp.com" target='_blank'>Stay on Track</a>
-  </h2>
-
-  <a href='#' id='sot' title='Click to see more screenshots'>
-    <img src='/img/sot-thumb.png' alt='Stay on Track' width='500px'/>
-  </a>
-
-  <p>
-    In 2011 I wrote a small Rails application to keep track on when I went to
-    the gym for an entire year. The premise is that creating a chain of events
-    helps build a habit. It worked out great, but I do not maintain or use it
-    anymore though.
-  </p>
-
-  <p>
-    <strong>Technologies:</strong>
-    Ruby on Rails, PostgreSQL, Haml, Sass, Devise, Heroku and RSpec.
-  </p>
-
-  <hr />
-
   <h2>Your Project?</h2>
 
-  <p>
-    Need help getting your own project or idea off the ground? Don't hesitate to
+  <p class="lead">
+    Need help with your own project or idea? Please don't hesitate to
     <a href="mailto:thejspr@gmail.com">get in touch</a>.
   </p>
 
@@ -140,58 +118,48 @@ title: Projects - The Progress
 </div>
 
 <link href='/css/magnific-popup.css' rel='stylesheet' />
-<script src="/js/zepto.min.js" async></script>
-<script type='text/javascript' src='/js/jquery.magnific-popup.min.js' async></script>
+<script src="/js/zepto.min.js"></script>
+<script type='text/javascript' src='/js/jquery.magnific-popup.min.js'></script>
 
 <script>
-  $('#backboneindex').magnificPopup({
-    items: [
-      { src: '/img/backboneindex.png' }
-    ],
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
+  $(function(){
+    $('#backboneindex').magnificPopup({
+      items: [
+        { src: '/img/backboneindex.png' }
+      ],
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
 
-  $('#measurehub').magnificPopup({
-    items: [
-      { src: '/img/measurehub.png' },
-      { src: '/img/measurehub2.png' },
-      { src: '/img/measurehub3.png' },
-      { src: '/img/measurehub4.png' }
-    ],
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
+    $('#measurehub').magnificPopup({
+      items: [
+        { src: '/img/measurehub.png' },
+        { src: '/img/measurehub2.png' },
+        { src: '/img/measurehub3.png' },
+        { src: '/img/measurehub4.png' }
+      ],
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
 
-  $('#chromarks').magnificPopup({
-    items: { src: '/img/chromarks.png' },
-    type: 'image'
-  });
+    $('#chromarks').magnificPopup({
+      items: { src: '/img/chromarks.png' },
+      type: 'image'
+    });
 
-  $('#hn').magnificPopup({
-    items: [
-      { src: '/img/hn.png' },
-      { src: '/img/hn2.png' }
-    ],
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
-
-  $('#sot').magnificPopup({
-    items: [
-      { src: '/img/sot.png' },
-      { src: '/img/sot2.png' },
-      { src: '/img/sot3.png' }
-    ],
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
+    $('#hn').magnificPopup({
+      items: [
+        { src: '/img/hn.png' },
+        { src: '/img/hn2.png' }
+      ],
+      type: 'image',
+      gallery: {
+        enabled: true
+      }
+    });
   });
 </script>
