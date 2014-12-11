@@ -1,8 +1,8 @@
 name: Jesper Kjelgaard
-url: 'http://thejspr.com'
+url: 'https://thejspr.com'
 description: 'Blog and portfolio of Jesper Kjeldgaard'
 permalink: 'blog/:title'
 markdown: kramdown
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
 gems:
   - jekyll-sitemap
