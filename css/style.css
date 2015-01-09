@@ -1,5 +1,5 @@
 /* landing styles */
-.landing p {
+.landing > p {
   margin-top: 20px;
 }
 
@@ -12,16 +12,12 @@ body {
   font-size: 1.6em;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 .sidebar {
   margin-top: 15px;
   text-align: center;
 }
 
-.sidebar a {
+.sidebar > a {
   margin-bottom: 5px;
   font-weight: 200;
   text-transform: uppercase;
@@ -32,15 +28,11 @@ a:hover {
   padding-bottom: 12px;
 }
 
-.title a {
-  color: #333;
-}
-
-#blog h1 {
+#blog > h1 {
   margin-bottom: 20px;
 }
 
-#blog h2 {
+#blog > h2 {
   margin: 0 0 20px 0;
 }
 
@@ -59,6 +51,11 @@ a:hover {
   margin: 20px 0;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
+  line-height: 1.5em;
+}
+
+.post > p {
+  margin-bottom: 15px;
 }
 
 .post img {
@@ -67,14 +64,6 @@ a:hover {
   margin-right: auto;
   max-width: 100%;
   height: auto;
-}
-
-.excerpt {
-  text-align: justify;
-}
-
-.contact-form {
-  /* max-width: 500px; */
 }
 
 /* Responsiveness (larger than wide-tabled) */
