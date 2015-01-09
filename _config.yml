@@ -3,6 +3,6 @@ url: 'https://thejspr.com'
 description: 'Blog and portfolio of Jesper Kjeldgaard'
 permalink: 'blog/:title'
 markdown: kramdown
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile']
+exclude: ['Gemfile', 'Gemfile.lock', 'bin']
 gems:
   - jekyll-sitemap
