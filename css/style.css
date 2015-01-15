@@ -58,6 +58,11 @@ body {
   margin-bottom: 15px;
 }
 
+.post > h2 {
+  margin-top: 30px;
+  font-size: 26px;
+}
+
 .post img {
   display: block;
   margin-left: auto;
