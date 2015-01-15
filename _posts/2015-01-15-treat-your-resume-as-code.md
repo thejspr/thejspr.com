@@ -59,5 +59,7 @@ it into Git.
 ## Conclusion
 
 Reviewing my resume every month for the last year has worked out great for me
-and I implore you to try it out for yourself. If you have any good career
-practices I'd love to hear them.
+and I implore you to try it out for yourself. The process described above has
+evolved my resume into [this](/resume-jesper-kjeldgaard.pdf).
+
+If you have any good career practices I'd love to hear them.
