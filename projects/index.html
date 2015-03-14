@@ -15,6 +15,29 @@ title: Projects - The Progress
   </p>
 
   <h2>
+    <a href='https://emailreminders.net' target='_blank'>Email Reminders</a>
+  </h2>
+
+  <a href='#' id='emailreminders' title='Click to see more screenshots'>
+    <img src='/img/emailreminders-thumb.png' alt='Email Reminders' width='300px' />
+  </a>
+
+  <p>
+    This is a quick MVP of an app that sends you daily email reminders. I first
+    tested the idea using a Zapier recipe and after finding it useful I build
+    the app and have since been enjoying the reminders.
+    <a href='https://emailreminders.net' target='_blank'>Try it out</a> and let
+    me know what you think.
+  </p>
+
+  <p>
+    <strong>Technologies:</strong>
+    Rails, Bootstrap, Cloudflare.
+  </p>
+
+  <hr />
+
+  <h2>
     <a href='http://backboneindex.com' target='_blank'>Backbone Index</a>
   </h2>
 
@@ -96,7 +119,7 @@ title: Projects - The Progress
     I like reading technology news on
     <a href="http://news.ycombinator.com">HackerNews</a>, and to be able to
     focus on trending stories, I wrote a Chrome extension to sort the posts by
-    who many points they have. Check out the source code on
+    how many points they have. Check out the source code on
     <a href="https://github.com/thejspr/hacker-news-sorter">Github</a>.
   </p>
 
@@ -123,6 +146,16 @@ title: Projects - The Progress
 
 <script>
   $(function(){
+    $('#emailreminders').magnificPopup({
+      items: [
+        { src: '/img/emailreminders.png' }
+      ],
+      type: 'image',
+      gallery: {
+        enabled: false
+      }
+    });
+
     $('#backboneindex').magnificPopup({
       items: [
         { src: '/img/backboneindex.png' }
