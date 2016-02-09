@@ -17,5 +17,3 @@ title: #{title}
 ## Conclusion
 EOS
 end
-
-system ("#{ENV['EDITOR']} #{file}")
