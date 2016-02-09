@@ -1,7 +1,7 @@
 name: Jesper Kjelgaard
 url: 'https://thejspr.com'
 description: 'Thejspr'
-permalink: 'blog/:title'
+permalink: 'blog/:title/'
 markdown: kramdown
 exclude: ['Gemfile', 'Gemfile.lock', 'bin']
 gems:
