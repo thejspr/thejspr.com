@@ -34,7 +34,7 @@ needed. In the example above, the last create user is provided to have some sane
 default data when previewing the mail. You can also use fixtures or create
 random models, anything goes.
 
-With the preview class in place, you can not go to `/rails/mailers` where you
+With the preview class in place, you can now go to `/rails/mailers` where you
 should have a link to the email preview (if nothing shows up, try restarting the
 webserver).
 
