@@ -1,6 +1,6 @@
 ---
 layout: post
-title: migration from react on rails to webpacker
+title: Migrating from React-on-rails to Webpacker
 ---
 
 Having just migrated from ReactOnRails to Webpacker for handling the frontend
@@ -67,6 +67,8 @@ neat setup with `webpack-dev-server` and stylesheets in webpack, something I
 didn't get when first setting up ReactOnRails about a year ago. But the biggest
 win here is moving away from the magic of ReactOnRails to something where I've
 gained a much better understanding of all the moving parts, and I'm not better
-positioned to deal with any issues going forward.
+positioned to deal with any issues going forward. That being said, I'd like to
+thank the creators and maintainers of ReactOnRails for making it easy to get
+started using React with Rails.
 
 If you discover any quirks please share them in the comments below.
