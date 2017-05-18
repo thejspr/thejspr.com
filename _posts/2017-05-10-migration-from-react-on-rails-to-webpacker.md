@@ -27,8 +27,8 @@ Rails in 5.1.
 ``` ruby
   # application_helper.rb
   def react_component(pack, props)
-    content = javascript_pack_tag(pack)
-    content << tag(:div, id: 'container', data: props)
+    content = javascript_pack_tag(pack.downcase)
+    content << content_tag(:div, nil, { id: 'container', data: props })
     content.html_safe
   end
 ```
