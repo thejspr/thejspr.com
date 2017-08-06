@@ -1,6 +1,6 @@
 name: Jesper Kjelgaard
 url: 'https://thejspr.com'
-description: 'Thejspr'
+description: 'I work with Ruby on Rails, React and Android. Get in touch if I can help.'
 permalink: 'blog/:title/'
 markdown: kramdown
 exclude: ['Gemfile', 'Gemfile.lock', 'bin']
