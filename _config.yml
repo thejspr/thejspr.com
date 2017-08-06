@@ -1,6 +1,7 @@
 name: Jesper Kjelgaard
 url: 'https://thejspr.com'
 description: 'I work with Ruby on Rails, React and Android. Get in touch if I can help.'
+keywords: 'ruby on rails freelancer, freelance software developer, full stack developer'
 permalink: 'blog/:title/'
 markdown: kramdown
 exclude: ['Gemfile', 'Gemfile.lock', 'bin']
