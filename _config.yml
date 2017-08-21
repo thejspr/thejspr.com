@@ -5,5 +5,5 @@ keywords: 'ruby on rails freelancer, freelance software developer, full stack de
 permalink: 'blog/:title/'
 markdown: kramdown
 exclude: ['Gemfile', 'Gemfile.lock', 'bin']
-gems:
+plugins:
   - jekyll-sitemap
