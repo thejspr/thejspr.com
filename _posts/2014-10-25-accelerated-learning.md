@@ -37,4 +37,5 @@ podcasts are interviews with interesting people, some of those are:
 
 Whilst learning by filling in the gaps with audiobooks and podcasts is useful,
 it is likewise beneficial to switch off and be present and mindful. If you have
-other methods of accelerated learning I'd love to hear about it so please get in touch.
+other methods of accelerated learning I'd love to hear about it so please leave
+a comment or get in touch.

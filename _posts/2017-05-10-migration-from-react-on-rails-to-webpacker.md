@@ -70,3 +70,5 @@ gained a much better understanding of all the moving parts, and I'm not better
 positioned to deal with any issues going forward. That being said, I'd like to
 thank the creators and maintainers of ReactOnRails for making it easy to get
 started using React with Rails.
+
+If you discover any quirks please share them in the comments below.

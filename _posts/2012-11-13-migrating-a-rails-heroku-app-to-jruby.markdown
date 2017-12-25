@@ -2,6 +2,7 @@
 layout: post
 title: "Migrate Rails to JRuby on Heroku"
 date: 2012-11-13 07:37
+comments: true
 categories: jruby heroku
 url: /2012/migrating-a-rails-heroku-app-to-jruby
 ---
