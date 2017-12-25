@@ -127,5 +127,4 @@ rspec` or whichever testing framework you use.
 ## Conclusion
 
 I hope you found this useful and feel confident in trying out Docker for your
-Rails applications. If you have any questions or feedback, please let me know in
-the comments below.
+Rails applications. If you have any questions or feedback, please let me know.

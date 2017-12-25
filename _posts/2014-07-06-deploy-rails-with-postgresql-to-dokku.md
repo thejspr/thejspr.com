@@ -103,4 +103,4 @@ swapon /swapfile
 
 I hope this gave you a quick overview on how easy it is to get your own
 mini-Heroku running using Dokku. For more advanced setups I'd recommend looking
-at the documentation, and please share anything you find in the comments below.
+at the documentation, and please share anything.

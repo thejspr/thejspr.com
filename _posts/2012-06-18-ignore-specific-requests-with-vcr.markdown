@@ -2,7 +2,6 @@
 layout: post
 title: "Ignore specific requests with VCR"
 date: 2012-06-18 16:42
-comments: true
 categories: testing ruby rails
 url: /2012/ignore-specific-requests-with-vcr
 ---

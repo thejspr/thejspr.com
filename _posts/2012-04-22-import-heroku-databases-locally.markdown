@@ -2,7 +2,6 @@
 layout: post
 title: "Import Heroku databases locally"
 date: 2012-04-22 12:10
-comments: true
 categories: heroku devops postgresql
 url: /2012/import-heroku-databases-locally
 ---
