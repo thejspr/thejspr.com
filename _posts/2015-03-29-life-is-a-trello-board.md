@@ -52,7 +52,7 @@ weight, reading and skills I want to acquire.
 
 #### Side-projects Board
 
-I [like working on side-projects](/projects/) to try out ideas and discover new
+I like working on side-projects to try out ideas and discover new
 technologies. This board is for managing those ideas and projects. My current
 side-project is around tracking lean body mass, the MVP being a spreadsheet. I
 plan to write about this process in more details soon.
