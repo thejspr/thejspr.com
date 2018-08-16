@@ -21,7 +21,7 @@ Here I am documenting some steps I took to reduce that down below 5 minutes.
 
 `heroku config:set NPM_CONFIG_PRODUCTION=true YARN_PRODUCTION=true` ensures that
 `devDependencies` are not installed
-([source](https://devcenter.heroku.com/articles/nodejs-support#package-installation])
+([source](https://devcenter.heroku.com/articles/nodejs-support#package-installation)).
 
 ## Disabling multiple Yarn installs
 
@@ -39,7 +39,7 @@ end
 ## Reducing buildpacks to Ruby only
 
 I'm not sure the NodeJS buildpack is entirely necessary anymore, but it does
-come with some caching improvements (node_modules folder) that are not in the
+come with some caching improvements (`node_modules` folder) that are not in the
 Ruby buildpack.
 
 ## Conclusion
