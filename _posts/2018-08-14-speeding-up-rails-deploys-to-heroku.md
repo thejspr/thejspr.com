@@ -12,8 +12,8 @@ Here I am documenting some steps I took to reduce that down below 5 minutes.
 ## The setup
 
 - Deploys are performed by SemaphoreCI once master is green.
-- The Rails 5.1 application is running on professional dynos and using the
-    official ruby and nodejs buildpacks.
+- The Rails 5.2 application is running on professional dynos and using the
+    official Ruby and NodeJS buildpacks.
 - Migrations are run on each deploy using a release command (`release: bundle
     exec rake db:migrate`).
 
