@@ -1,6 +1,14 @@
 ---
 ---
-@import 'bulma/bulma';
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/elements/container.sass";
+@import "bulma/sass/elements/content.sass";
+@import "bulma/sass/elements/title.sass";
+@import "bulma/sass/components/navbar.sass";
+@import "bulma/sass/components/card.sass";
+@import "bulma/sass/layout/section.sass";
+@import "bulma/sass/layout/hero.sass";
 
 .hero a {
   border-bottom: 1px solid #fff;
@@ -14,16 +22,8 @@
   }
 
   .post-body {
-    max-width: 70%;
+    max-width: 60%;
   }
-}
-
-p {
-  margin: 10px 0;
-}
-
-.post-container {
-  margin-top: 20px;
 }
 
 #disqus_thread {
@@ -35,14 +35,8 @@ p {
 }
 
 .post-index-item {
-  margin: 10px;
+  margin-bottom: 10px;
 }
-
-h1 { @extend .title, .is-2; }
-h2 { @extend .title, .is-3; }
-h3 { @extend .title, .is-4; }
-h4 { @extend .title, .is-5; }
-h5 { @extend .title, .is-6; }
 
 .highlight {
   @extend .card;
@@ -53,6 +47,10 @@ h5 { @extend .title, .is-6; }
 
 .highlighter-rouge {
   margin: 10px 0;
+}
+
+.highlight pre {
+  text-align: left;
 }
 
 /* Syntax highlighting */
