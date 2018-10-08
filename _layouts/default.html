@@ -10,8 +10,7 @@
     <link rel='alternate' type='application/rss+xml' title='The Progress' href='/feed.xml' />
     <link href="/img/favicon.ico" rel="shortcut icon">
 
-    <link href='/css/bootstrap.min.css' rel='stylesheet'>
-    <link rel='stylesheet' href='/css/style.css'>
+    <link rel='stylesheet' href='/assets/style.css'>
 
     <script>
       var _gaq = _gaq || [];
@@ -29,23 +28,53 @@
     </script>
   </head>
   <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item has-text-weight-bold" href="/">
+          THEJSPR
+        </a>
 
-    <div class='container'>
-      <div class='row'>
-
-        <aside class='col-sm-12 col-md-2 col-md-offset-1'>
-          <div class='sidebar sticky'>
-            <a class='btn btn-default' href='/'>Home</a>
-            <a class='btn btn-default' href='/about/'>About</a>
-            <a class='btn btn-default' href='/blog/'>Blog</a>
-          </div>
-        </aside>
-
-        <section class='col-sm-12 col-md-7 content'>
-          {{ content }}
-        </section>
-
+        <a role="button" class="navbar-burger burger" aria-label="menu"
+          aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-    </div>
+
+      <div id='navMenu' class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-weight-bold" href='/blog'>
+            Blog
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    {{ content }}
   </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
 </html>

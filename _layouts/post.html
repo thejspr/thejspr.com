@@ -2,20 +2,33 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<section class="post">
-  {{ content }}
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        {{ page.title }}
+      </h1>
+      <div class="subtitle">
+        {{ page.date | date_to_string }}
+      </div>
+    </div>
+  </div>
 </section>
 
-<div id="disqus_thread"></div>
-<script>
-  var disqus_shortname = 'thejspr';
+<div class="container post-container">
+  <div class="post-body">
+    {{ content }}
 
-  (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
+    <div id="disqus_thread"></div>
+  </div>
+
+  <script>
+    var disqus_shortname = 'thejspr';
+
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+</div>

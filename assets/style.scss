@@ -1,77 +1,58 @@
-/* landing styles */
-.landing > p {
+---
+---
+@import 'bulma/bulma';
+
+.hero a {
+  border-bottom: 1px solid #fff;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-copy {
+    max-width: 50%;
+    margin-top: 20px;
+  }
+
+  .post-body {
+    max-width: 70%;
+  }
+}
+
+p {
+  margin: 10px 0;
+}
+
+.post-container {
   margin-top: 20px;
 }
 
-p.lead {
-  margin-top: 10px;
+#disqus_thread {
+  margin-top: 40px;
 }
 
-/* base styles */
-body {
-  font-size: 1.6em;
+.hero.is-fullheight {
+  min-height: calc(100vh - 52px);
 }
 
-.sidebar {
-  margin-top: 15px;
-  text-align: center;
+.post-index-item {
+  margin: 10px;
 }
 
-.sidebar > a {
-  margin-bottom: 5px;
-  font-weight: 200;
-  text-transform: uppercase;
-}
+h1 { @extend .title, .is-2; }
+h2 { @extend .title, .is-3; }
+h3 { @extend .title, .is-4; }
+h4 { @extend .title, .is-5; }
+h5 { @extend .title, .is-6; }
 
-.sticky {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 12px;
-}
-
-#blog > h1 {
-  margin-bottom: 20px;
-}
-
-#blog > h2 {
-  margin: 0 0 20px 0;
-}
-
-.post {
-  margin: 20px 0;
-  padding: 10px 0;
-  border-bottom: 1px solid #ccc;
-  line-height: 1.5em;
-}
-
-.post > p {
-  margin-bottom: 15px;
-}
-
-.post > h2 {
-  margin-top: 30px;
-  font-size: 26px;
-}
-
-.post img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
-}
-
-/* Responsiveness (larger than wide-tabled) */
-@media (min-width: 992px) {
-  .sticky {
-    border: none;
-    position: fixed;
-    width: 120px;
-    top: 12px;
+.highlight {
+  @extend .card;
+  pre {
+    padding: 10px;
   }
+}
 
-  .sticky a {
-    display: block;
-  }
+.highlighter-rouge {
+  margin: 10px 0;
 }
 
 /* Syntax highlighting */
