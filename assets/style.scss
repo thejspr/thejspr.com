@@ -13,6 +13,11 @@
 .hero a {
   border-bottom: 1px solid #fff;
   font-weight: bold;
+  color: #fff;
+
+  &:hover {
+    border-bottom: 2px solid #fff;
+  }
 }
 
 @media only screen and (min-width: 600px) {
