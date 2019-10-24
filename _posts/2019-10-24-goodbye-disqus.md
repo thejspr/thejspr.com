@@ -1,6 +1,6 @@
 ---
 layout: post
-title: goodbye-disqus
+title: Goodbye Disqus
 ---
 
 Privacy concerns on the internet are everywhere these days, and it made me
