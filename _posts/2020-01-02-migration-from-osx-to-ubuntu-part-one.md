@@ -32,6 +32,13 @@ linux either doesn't work or looks really terrible.
 I've replaced TablePlus (database GUI) with DataGrip from jetbrains. It's also
 non-free, but so far it seems to hold up pretty well.
 
+## Open command
+
+On mac I used `open` in many scripts to open a link or file. An linux equivalent
+for this is `xdg-open`. Link it like this for a seamless experience:
+
+`sudo ln -nfs /usr/bin/xdg-open /usr/bin/open`
+
 ## Other apps
 
 I was pleasantly surprised that all the other apps I use the most work fine on
