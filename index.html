@@ -25,8 +25,20 @@ title: Software entrepreneur
       </p>
 
       <p class="hero-copy">
-      Browse the blog <a href="/blog">here</a>.
+      Latest blog posts:
       </p>
+
+      <div class="container">
+        {% for post in site.posts %}
+          <div class='post-index-item'>
+            <a href="{{post.url}}">{{post.title}}</a>
+            <span class="is-size-7">
+              ~
+              {{ post.date | date: "%d %b %y" }}
+            </span>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>
