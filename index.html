@@ -24,12 +24,12 @@ title: Software entrepreneur
         or <a href="https://www.twitter.com/thejspr">Twitter</a>.
       </p>
 
-      <p class="hero-copy">
+      <p class="hero-copy pb">
       Latest blog posts:
       </p>
 
       <div class="container">
-        {% for post in site.posts %}
+        {% for post in site.posts limit:5 %}
           <div class='post-index-item'>
             <a href="{{post.url}}">{{post.title}}</a>
             <span class="is-size-7">
@@ -38,6 +38,9 @@ title: Software entrepreneur
             </span>
           </div>
         {% endfor %}
+        <div class='post-index-item'>
+          <a href="/blog" class='b'>All blog posts</a>
+        </div>
       </div>
     </div>
   </div>
