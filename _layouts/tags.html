@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1>Posts tagged "{{ page.tag-name }}"</h1>
+
+<section class='tags'>
+  {% for post in site.posts %}
+    {% if post.tags contains page.tag-name %}
+      <div class='index-item'>
+        <a href="{{post.url}}">{{post.title}}</a>
+
+        <span class="index-item--date">
+          {{ post.date | date: "%B %Y" }}
+        </span>
+      </div>
+    {% endif %}
+  {% endfor %}
+</section>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ruby installations on steroids
+tags: ruby
 ---
 
 If you are using Ruby, chances are you're using Rbenv to manage Ruby installations.

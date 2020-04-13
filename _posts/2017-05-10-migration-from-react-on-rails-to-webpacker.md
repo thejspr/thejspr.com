@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Migrating from React-on-rails to Webpacker
+tags: javascript rails
 ---
 
 Having just migrated from ReactOnRails to Webpacker for handling the frontend

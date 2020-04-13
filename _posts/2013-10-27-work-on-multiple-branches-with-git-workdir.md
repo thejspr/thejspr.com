@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Work on multiple branches with Git workdir
+tags: git
 ---
 
 Sometimes I find the need to work on multiple branches in the same repository at

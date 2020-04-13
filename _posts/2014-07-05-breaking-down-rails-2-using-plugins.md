@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Breaking down Rails 2 using plugins
+tags: rails
 ---
 
 Going SOA is no easy feat, and as usual when something is complex and

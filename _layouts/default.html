@@ -40,7 +40,13 @@
 
     <section class='container'>
       {{ content }}
-      <pre class='footer'>Jesper Kjeldgaard {{ 'now' | date: "%Y"  }}</pre>
     </section>
+
+    <footer>
+      <a href='/'>Home</a>
+      · <a href='/about'>About</a>
+      · <a href='/feed.xml'>RSS</a>
+      · Jesper Kjeldgaard {{ 'now' | date: "%Y"  }}
+    </div>
   </body>
 </html>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Migration from OSX to Ubuntu part one
+tags: linux
 ---
 
 After having worked solely on a mac since 2011, I've moved back to linux as my

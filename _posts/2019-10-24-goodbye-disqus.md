@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Goodbye Disqus
+tags: design
 ---
 
 Privacy concerns on the internet are everywhere these days, and it made me

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Going Freelance
+tags: career
 ---
 
 For the past 3 years I have worked in two London-based startups, building Saas

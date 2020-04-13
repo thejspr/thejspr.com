@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Previewing emails in Rails 4
-published: true
+tags: rails
 ---
 
 Rails 4.1 introduced a new feature which allows you to preview emails via your

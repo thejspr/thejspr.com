@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ruby on Rails Memory Profiling
+tags: ruby
 ---
 
 Adding a new gem to the Gemfile is a good way to get a feature live sooner, but

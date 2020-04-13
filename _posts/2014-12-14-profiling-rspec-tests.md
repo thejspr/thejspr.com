@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Profiling RSpec tests
+tags: ruby
 ---
 
 Knowing _why_ something is slow is key to making it faster. Everybody hates slow

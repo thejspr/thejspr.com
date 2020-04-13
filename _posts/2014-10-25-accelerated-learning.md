@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Accelerated learning
+tags: meta
 ---
 
 In my never ending quest to learn more about the world and becoming the best

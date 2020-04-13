@@ -2,8 +2,7 @@
 layout: post
 title: "Radical Feature Justification"
 date: 2012-05-24 02:43
-comments: true
-categories: agile product-development
+tags: process
 url: /2012/radical-feature-justification
 ---
 

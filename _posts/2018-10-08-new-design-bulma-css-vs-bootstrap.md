@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New design: Bulma.css vs. Bootstrap"
+tags: design
 ---
 
 I've wanted to redesign the blog slightly for a while and thought I'd couple

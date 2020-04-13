@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rails with PostgreSQL on Docker using Fig
+tags: rails devops
 ---
 
 **Update 20/01-16:** Updated installation instructions for the latest versions of

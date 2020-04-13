@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Faster Git workflows
+tags: git
 ---
 
 Over the last decade, Git has fast become an integral part of most developers

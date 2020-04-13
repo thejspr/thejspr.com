@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using webpack-bundle-analyzer in rails
+tags: rails javascript
 ---
 
 If you are using webpack in Rails via Webpacker, then the webpack configuration

@@ -1,5 +1,13 @@
 ---
 ---
+$light-gray: #f6f6f6;
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 body {
   font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
   font-size: 18px;
@@ -7,6 +15,34 @@ body {
   @media only screen and (min-width: 700px) {
     font-size: 20px;
   }
+}
+
+p {
+  line-height: 28px;
+}
+
+code {
+  background-color: $light-gray;
+}
+
+pre {
+  background-color: $light-gray;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 0.7em;
+  background-color: #f6f6f6;
+  padding: 10px;
+}
+
+.profile-image {
+  float: right;
+  padding: 10px;
 }
 
 .navbar {
@@ -18,22 +54,17 @@ body {
     font-size: 1.1em;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: bold;
   }
 }
 
-.container {
+.container, footer {
   margin: 30px auto 120px auto;
   max-width: 90%;
 
   @media only screen and (min-width: 700px) {
     max-width: 50%;
   }
-}
-
-.footer {
-  text-align: center;
-  margin-top: 80px;
-  font-size: 0.7em;
 }
 
 .index {
@@ -51,23 +82,8 @@ body {
   }
 }
 
-.hero-copy {
-  line-height: 28px;
-}
-
 .post-body {
   p, ul {
     line-height: 28px;
   }
-}
-
-code {
-  background-color: #f6f6f6;
-}
-
-pre {
-  background-color: #f6f6f6;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 5px;
 }

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Replacing Poltergeist/PhantomJS with Headless Chrome
+tags: rails testing
 ---
 
 The Chrome browser supports a headless mode as of version 59, which is a

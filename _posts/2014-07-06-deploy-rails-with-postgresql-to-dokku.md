@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Deploy Rails with PostgreSQL to Dokku
+tags: rails devops
 ---
 
 Dokku is a "Docker powered mini-Heroku in around 100 lines of Bash". It's really

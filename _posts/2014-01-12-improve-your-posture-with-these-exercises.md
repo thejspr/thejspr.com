@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Improve your posture with these exercises
+tags: fitness
 ---
 
 As developers we spend a lot of time sitting at a desk hunched over a keyboard.

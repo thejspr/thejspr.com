@@ -2,8 +2,7 @@
 layout: post
 title: "Show Rails environment in Pry"
 date: 2012-10-31 23:59
-comments: true
-categories: ruby rails
+tags: rails
 url: /2012/display-rails-environment-in-pry
 ---
 

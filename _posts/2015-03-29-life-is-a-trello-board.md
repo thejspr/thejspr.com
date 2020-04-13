@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Life is a Trello Board
-published: true
+tags: meta
 ---
 
 I sometimes find myself feeling disorganized in terms of the tasks I

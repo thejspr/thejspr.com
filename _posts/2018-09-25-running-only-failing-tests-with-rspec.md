@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Running only failing tests with RSpec
+tags: rails testing
 ---
 
 A common pattern in TDD is to make changes, run the suite, fix any failing tests

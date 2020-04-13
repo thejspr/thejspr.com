@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Treat your resume as code
+tags: career
 ---
 
 Although debatable whether the resume still has a place amongst LinkedIn and

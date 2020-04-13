@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Adding reference with different model name in Rails 5
+tags: rails
 ---
 
 In the scenario where you want to add a reference on a model and the reference

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Speeding up Rails deploys to Heroku
+tags: rails heroku
 ---
 
 Since adding Yarn and Webpacker to a fairly conventional Rails application, my

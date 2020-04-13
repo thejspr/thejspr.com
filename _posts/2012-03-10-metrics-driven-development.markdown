@@ -2,8 +2,7 @@
 layout: post
 title: "Metrics driven development"
 date: 2012-03-10 13:14
-comments: true
-categories: metrics
+tags: process
 url: /2012/metrics-driven-development
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Faster Android Development
+tags: android
 ---
 
 In November 2015 I moved from Ruby on Rails to Android in my daily work at

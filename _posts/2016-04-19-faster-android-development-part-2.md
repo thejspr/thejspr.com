@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Faster Android Development part 2
+tags: android
 ---
 
 I started Android development last year, and have since then made gained some

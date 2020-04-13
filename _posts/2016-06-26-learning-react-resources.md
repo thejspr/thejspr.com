@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Learning React - Resources
+tags: javascript
 ---
 
 I've recently been getting into React, and this post is a list of the
