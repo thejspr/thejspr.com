@@ -3,13 +3,17 @@
   <head>
     <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
     <meta name='description' content='{{ site.description }}'>
     <meta name='keywords' content='{{ site.keywords }}'>
-    <title>{{ page.title }} - {{ site.description }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>{{ page.title }} - {{ site.description }}</title>
+
     <link rel='alternate' type='application/rss+xml' title='The Progress' href='/feed.xml' />
     <link href="/img/favicon.ico" rel="shortcut icon">
 
+    <link rel='stylesheet' href='/assets/normalize.css'>
     <link rel='stylesheet' href='/assets/style.css'>
 
     <script>
@@ -28,53 +32,15 @@
     </script>
   </head>
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item has-text-weight-bold" href="/">
-          THEJSPR
-        </a>
-
-        <a role="button" class="navbar-burger burger" aria-label="menu"
-          aria-expanded="false" data-target="navMenu">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-
-      <div id='navMenu' class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item has-text-weight-bold" href='/blog'>
-            Blog
-          </a>
-        </div>
-      </div>
+    <nav class="navbar">
+      <a class="navbar-brand" href="/">
+        Thejspr
+      </a>
     </nav>
 
-    {{ content }}
+    <section class='container'>
+      {{ content }}
+      <pre class='footer'>Jesper Kjeldgaard {{ 'now' | date: "%Y"  }}</pre>
+    </section>
   </body>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
-        $navbarBurgers.forEach( el => {
-          el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-          });
-        });
-      }
-
-    });
-  </script>
 </html>

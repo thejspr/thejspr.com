@@ -3,45 +3,32 @@ layout: default
 title: Software entrepreneur
 ---
 
-<section class="hero is-fullheight is-primary is-bold">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-        Hi! I'm Jesper.
-      </h1>
-      <h2 class="subtitle">
-        Software entrepreneur
-      </h2>
+<h1 class="title">
+  Hi! I'm Jesper.
+</h1>
 
-      <p class="hero-copy">
-        I work with the full stack to solve problems with web-based and mobile solutions.
-        You can read more about me on <a href="https://www.linkedin.com/in/jesperkjeldgaard">LinkedIn</a>,
-        and see some of my work on <a href="https://www.github.com/thejspr">Github</a>.
-      </p>
+<p class="hero-copy">
+  I work with the full stack to solve problems with web-based and mobile solutions.
+  You can read more about me on <a href="https://www.linkedin.com/in/jesperkjeldgaard">LinkedIn</a>,
+  and see some of my work on <a href="https://www.github.com/thejspr">Github</a>.
+</p>
 
-      <p class="hero-copy">
-        Say hi <a href='mailto:thejspr@gmail.com'>via email</a>
-        or <a href="https://www.twitter.com/thejspr">Twitter</a>.
-      </p>
+<p class="hero-copy">
+  Say hi <a href='mailto:thejspr@gmail.com'>via email</a>
+  or <a href="https://www.twitter.com/thejspr">Twitter</a>.
+</p>
 
-      <p class="hero-copy pb">
-      Latest blog posts:
-      </p>
+<div class="index">
+  <h4 class="index-heading">
+    Blog posts
+  </h4>
 
-      <div class="container">
-        {% for post in site.posts limit:5 %}
-          <div class='post-index-item'>
-            <a href="{{post.url}}">{{post.title}}</a>
-            <span class="is-size-7">
-              ~
-              {{ post.date | date: "%d %b %y" }}
-            </span>
-          </div>
-        {% endfor %}
-        <div class='post-index-item'>
-          <a href="/blog" class='b'>All blog posts</a>
-        </div>
-      </div>
+  {% for post in site.posts %}
+    <div class='index-item'>
+      <a href="{{post.url}}">{{post.title}}</a>
+      <span class="index-item--date">
+        {{ post.date | date: "%B %Y" }}
+      </span>
     </div>
-  </div>
-</section>
+  {% endfor %}
+</div>
