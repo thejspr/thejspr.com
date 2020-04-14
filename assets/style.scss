@@ -1,5 +1,7 @@
 ---
 ---
+@import "_scss/mixins";
+
 $light-gray: #f6f6f6;
 
 * {
@@ -10,19 +12,33 @@ $light-gray: #f6f6f6;
 
 body {
   font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
-  font-size: 18px;
+  font-size: 16px;
 
-  @media only screen and (min-width: 700px) {
+  @include tablet-up {
     font-size: 20px;
   }
 }
 
 p {
-  line-height: 28px;
+  line-height: 24px;
+
+  @include tablet-up {
+    line-height: 28px;
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 code {
   background-color: $light-gray;
+  font-size: 0.85em;
+  padding: 2px;
 }
 
 pre {
@@ -32,11 +48,14 @@ pre {
   padding: 5px;
 }
 
+figure {
+  margin: 10px 0;
+}
+
 footer {
   text-align: center;
-  margin-bottom: 60px;
   font-size: 0.7em;
-  background-color: #f6f6f6;
+  background-color: $light-gray;
   padding: 10px;
 }
 
@@ -55,6 +74,10 @@ footer {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
+
+    &:visited {
+      color: #000;
+    }
   }
 }
 
@@ -62,7 +85,7 @@ footer {
   margin: 30px auto 120px auto;
   max-width: 90%;
 
-  @media only screen and (min-width: 700px) {
+  @include tablet-up {
     max-width: 50%;
   }
 }
@@ -83,7 +106,9 @@ footer {
 }
 
 .post-body {
-  p, ul {
+  ul {
     line-height: 28px;
   }
+
+  word-wrap: break-word;
 }
