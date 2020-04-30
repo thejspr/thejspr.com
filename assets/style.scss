@@ -86,6 +86,10 @@ footer {
   @include tablet-up {
     max-width: 50%;
   }
+
+  @include tablet-wide-up {
+    max-width: 80%;
+  }
 }
 
 .index {
