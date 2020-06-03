@@ -10,7 +10,9 @@ $light-gray: #f6f6f6;
   text-rendering: optimizeLegibility;
 }
 
-body { font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace; font-size: 16px;
+body {
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+  font-size: 18px;
 
   @include tablet-up {
     font-size: 20px;
@@ -57,15 +59,30 @@ footer {
   padding: 10px;
 }
 
+.index-page {
+  margin-top: 100px;
+
+  .index-section {
+    margin: 50px 0;
+  }
+}
+
 .profile-image {
-  float: right;
-  padding: 10px;
+  border-radius: 50%;
+  margin: auto;
+  width: 200px;
+  display: block;
+
+  @include tablet-up {
+    float: right;
+    width: 250px;
+  }
 }
 
 .navbar {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 
   .navbar-brand {
     font-size: 1.1em;
@@ -92,9 +109,9 @@ footer {
   }
 }
 
-.index {
-  .index-heading {
-    margin-top: 40px;
+.posts-index {
+  .posts-index-heading {
+    margin-top: 60px;
     margin-bottom: 20px;
   }
 
