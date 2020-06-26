@@ -58,7 +58,7 @@ including Ruby 2.2.0 and the required RubyGems.
 ## Installing Fig
 
 Fig is a tool that allows you to specify, build and run services needed for your
-application. Go [here](http://www.fig.sh/install.html) for
+application. Go [here](https://github.com/mfoemmel/fig) for
 installation instructions.
 
 When you have Fig installed, copy the following into a `fig.yml` file.

@@ -7,10 +7,9 @@ tags: heroku rails
 url: /2012/migrating-a-rails-heroku-app-to-jruby
 ---
 
-[This talk](http://confreaks.com/videos/1235-aloharuby2012-why-jruby) by Charles
-Nutter recently inspired me to move one of my personal projects to JRuby. The
-app is fairly small, running Rails 3.2 using Postgresql, activemodel-serializers
-and oAuth to name a few.
+A "Why Jruby" talk by Charles Nutter recently inspired me to move one of my personal projects to
+JRuby. The app is fairly small, running Rails 3.2 using Postgresql, activemodel-serializers and
+oAuth to name a few.
 
 <!-- more -->
 
