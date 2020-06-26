@@ -30,13 +30,6 @@ The official React documentation is a great up-to-date resource for learning the
 ins and outs of the library.
 
 
-### [ES6 guide](https://mrzepinski.gitbooks.io/es6-guide/content/index.html)
-
-A great free guide for ES6 describing all the exciting new features coming to
-JavaScript. You can safely use it today with a transpiler like BabelJS or the
-like.
-
-
 ## That's it!
 
 For now... I will post more resources as I go deeper down the rabbit hole.

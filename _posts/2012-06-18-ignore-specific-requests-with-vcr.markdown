@@ -8,7 +8,7 @@ url: /2012/ignore-specific-requests-with-vcr
 
 I recently needed to test the integration between two Rails apps running locally on
 my machine and wanted to record the HTTP interactions with
-[VCR](https://github.com/myronmarston/vcr). VCR enables you to mock HTTP requests by
+[VCR](https://github.com/vcr/vcr). VCR enables you to mock HTTP requests by
 recording interactions and later replay them when you run your tests. This is useful
 when dealing with third-party API's and if your application is interacting with other
 applications you don't want to depend on when running your tests.
@@ -36,6 +36,6 @@ end
 {% endhighlight %}
 
 The feature was enabled in [this
-commit](https://github.com/myronmarston/vcr/commit/531896caaf094a298baf8a62e490eeda0d31ee15),
-as a response to [this issue](https://github.com/myronmarston/vcr/issues/42). So
+commit](https://github.com/vcr/vcr/commit/531896caaf094a298baf8a62e490eeda0d31ee15),
+as a response to [this issue](https://github.com/vcr/vcr/issues/42). So
 to enable this feature you need version 2 or greater of VCR.

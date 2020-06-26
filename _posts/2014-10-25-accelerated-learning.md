@@ -19,9 +19,9 @@ library and even the possibility to speed up playback. I rarely speed up
 fiction, but non-fiction I usually play at 1.25-1.5x speed. Some of my favourite
 audiobooks include:
 
-* [David Foster Wallace - This is Water](http://www.audible.co.uk/pd/This-Is-Water-The-Original-David-Foster-Wallace-Recording-Audiobook/B004EW5H4Y)
-* [The Happiness Hypothesis](http://www.audible.co.uk/pd/The-Happiness-Hypothesis-Unabridged-Part-1-Audiobook/B004FTOHYM)
-* [Hitchhiker's Guide to the Galaxy ](http://www.audible.co.uk/pd/Hitchhikers-Guide-to-the-Galaxy-Unabridged-Audiobook/B0093Q1NFS)
+* David Foster Wallace - This is Water
+* The Happiness Hypothesis
+* Hitchhiker's Guide to the Galaxy
 
 ## Podcasts
 
@@ -30,9 +30,9 @@ topics you're interested in. One benefit over audiobooks is that they are a bit
 more bite-sized and can usually be completed in one setting. My favourite
 podcasts are interviews with interesting people, some of those are:
 
-* [Stuff you should know](http://www.howstuffworks.com/podcasts/stuff-you-should-know)
-* [Giant Robots](http://giantrobots.fm/)
-* [NPR - All Songs Considered](http://www.npr.org/blogs/allsongs/163479981/our-show)
+* Stuff you should know
+* Giant Robots
+* NPR - All Songs Considered
 
 ## Conclusion
 
