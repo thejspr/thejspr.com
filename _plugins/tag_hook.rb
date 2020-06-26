@@ -11,6 +11,6 @@ end
 
 def generate_tag_file(tag)
   File.open("tags/#{tag}.html", "wb") do |file|
-    file << "---\nlayout: tags\ntag-name: #{tag}\n---title: Posts tagged #{tag}\n"
+    file << "---\nlayout: tags\ntag-name: #{tag}\ntitle: Posts tagged #{tag}\n---\n\n"
   end
 end
