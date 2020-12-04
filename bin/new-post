@@ -4,16 +4,15 @@ require 'time'
 
 title = ARGV[0]
 slug = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
-file = File.join(File.dirname(__FILE__), '../', '_posts', slug + '.md')
+file = File.join(File.dirname(__FILE__), '../', '_posts', "#{slug}.md")
 
-File.open(file, "w") do |f|
-  f << <<-EOS
----
+File.open(file, 'w') do |f|
+  f << %(---
 layout: post
 title: #{title}
 ---
 
 
 ## Conclusion
-EOS
+)
 end
