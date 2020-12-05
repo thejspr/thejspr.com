@@ -29,4 +29,13 @@ You can still use yarn to handle the js dependencies. An example
 //= require tablesorter
 ```
 
+# Heroku compilation issues
+
+Without the webpacker gem installed, if you are deploying on heroku, you will
+need to add the nodejs buildpack to ensure your npm packages are installed
+before the app is built:
+
+`heroku buildpacks:add --index 1 heroku/nodejs`
+
 Done and dusted.
+
