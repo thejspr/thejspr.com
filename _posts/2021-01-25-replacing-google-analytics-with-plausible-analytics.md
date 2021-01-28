@@ -10,5 +10,5 @@ are generally good.
 
 Another action I'm taking is replacing Google Analytics across my sites with
 [Plausible Analytics](https://plausible.io/). It's really good and doesn't do
-all the evil tracking google does, more reasonse
+all the evil tracking Google does, more reasons
 [here](https://plausible.io/vs-google-analytics).
