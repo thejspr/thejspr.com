@@ -2,7 +2,17 @@
 ---
 @import "_scss/mixins";
 
+$link-color: #83c5be;
 $light-gray: #f6f6f6;
+
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("Inter-Medium.woff2?v=3.15") format("woff2"),
+       url("Inter-Medium.woff?v=3.15") format("woff");
+}
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -11,11 +21,22 @@ $light-gray: #f6f6f6;
 }
 
 body {
-  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+  // font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
 
   @include tablet-up {
     font-size: 20px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
 
@@ -24,19 +45,6 @@ p {
 
   @include tablet-up {
     line-height: 28px;
-  }
-}
-
-h4 {
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-
-  &:hover {
-    text-decoration: underline;
   }
 }
 
@@ -121,7 +129,13 @@ footer {
   }
 
   .index-item {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    font-weight: 400;
+
+    a {
+      color: #000;
+      font-weight: 400;
+    }
 
     &--date {
       font-size: 0.6em;
