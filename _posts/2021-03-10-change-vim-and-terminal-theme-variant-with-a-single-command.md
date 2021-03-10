@@ -8,7 +8,7 @@ currently using the Solarized theme, which has great light and dark variants.
 With the following setup, I can switch the theme for both vim and terminal with
 a single command.
 
-```
+{% highlight bash %}
 #!/usr/bin/env bash
 
 if [ "$1" == "dark" ]; then
@@ -18,7 +18,7 @@ else
   sed -i 's/background=dark/background=light/g' ~/.vimrc
   sed -i 's/\*themeDark/*themeLight/g' ~/code/dotfiles/alacritty.yml
 fi
-```
+{% endhighlight %}
 
 I've named this script `setbg` and can be used with `setbg dark` and
 `setbg light`.
@@ -26,7 +26,7 @@ I've named this script `setbg` and can be used with `setbg dark` and
 I use Alacritty as my terminal, and for it to work I've setup yaml aliases for
 the light and dark solarized themes in my Alacritty config. Here is an excerpt:
 
-``` yaml
+{% highlight yaml %}
 schemes:
   solarized-light: &themeLight
     primary:
@@ -37,7 +37,7 @@ schemes:
     primary:
       background: '#002b36' # base03
       ...
-```
+{% endhighlight %}
 
 Check out the full Alacritty config
 [here](https://github.com/thejspr/dotfiles/blob/master/alacritty.yml).
