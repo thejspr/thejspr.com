@@ -10,6 +10,7 @@ permalink: 'blog/:title/'
 
 markdown: kramdown
 
+include: ['_headers']
 exclude: ['Gemfile', 'Gemfile.lock', 'bin']
 
 sass:
