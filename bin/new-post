@@ -12,7 +12,5 @@ layout: post
 title: #{title}
 ---
 
-
-## Conclusion
 )
 end
