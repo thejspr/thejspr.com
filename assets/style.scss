@@ -110,14 +110,15 @@ footer {
 
 .container, footer {
   margin: 30px auto 120px auto;
-  max-width: 90%;
+  padding: 0 20px;
+  max-width: 100%;
 
   @include tablet-up {
-    max-width: 50%;
+    max-width: 90%;
   }
 
   @include tablet-wide-up {
-    max-width: 70%;
+    max-width: 800px;
   }
 }
 
