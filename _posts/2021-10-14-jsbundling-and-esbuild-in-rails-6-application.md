@@ -11,7 +11,7 @@ title: JSbundling and esbuild in Rails 6 application
 5. Make it work :) It's highly dependent on your setup, whether you are using
    webpack etc. Mostly it should be fairly straightforward.
 6. If you are using a separate yarn install on github actions, remove it as it's
-   not take care of via rails.
+   now taken care of by rails.
 7. Ensure you have yarn/node available if you are on Heroku:
 `heroku buildpacks:add --index 1 heroku/nodejs`
 8. Deploy
