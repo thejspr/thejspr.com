@@ -14,3 +14,5 @@ title: #{title}
 
 )
 end
+
+system("nvim _posts/#{slug}.md")
