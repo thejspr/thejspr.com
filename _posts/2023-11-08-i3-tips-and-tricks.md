@@ -33,4 +33,4 @@ exec $connectCheck && google-chrome
 
 ## More tips and tricks
 
-Find all of my config in [my dotfiles](https://github.com/thejspr/dotfiles/i3).
+Find all of my config in [my dotfiles](https://github.com/thejspr/dotfiles/tree/master/i3).
