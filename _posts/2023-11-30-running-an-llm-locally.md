@@ -69,3 +69,7 @@ case is a space.
 ```
 
 This response is definitely way more useful.
+
+Another neat trick is that you can analyze code with openai:
+
+`cat file.rb | llm -s "Explain this code"`
